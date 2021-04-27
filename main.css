@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: #ffffff;
+  background-color: #b0d77f;
 }
 
 .nav-link {
@@ -188,4 +188,12 @@ section {
 
 .footer {
   margin-top: 20vh;
+}
+
+.background-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 770px;
+  z-index: -1;
 }
