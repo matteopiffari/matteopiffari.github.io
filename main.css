@@ -5,6 +5,11 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .navbar-brand {
   margin-left: 3%;
   width: 30px;
@@ -39,7 +44,7 @@ h4,
   min-height: 80vh;
   background-size: cover;
   background-position: center;
-  background-image: url('Assets/tableillo.png');
+  background-image: url('Assets/img/tableillo.png');
   background-size: cover;
   /*background-color: #eaedff;*/
   padding: 250px 0 200px;
@@ -50,15 +55,15 @@ h4,
     linear,
     left top,
     right top,
-    from(#4776e6),
-    color-stop(51%, #8e54e9),
-    to(#4776e6)
+    from(#24FE41),
+    color-stop(51%, #FDFC47),
+    to(#24FE41)
   );
   background-image: linear-gradient(
     to right,
-    #4776e6 0%,
-    #8e54e9 51%,
-    #4776e6 100%
+    #24FE41 0%,
+    #FDFC47 51%,
+    #24FE41 100%
   );
 }
 
@@ -184,6 +189,80 @@ h4,
 
 section {
   padding: 25px 0;
+}
+
+.contact-me {
+  background: #b0d77f;
+  padding-bottom: 20vh;
+  padding-top: 10vh;
+}
+
+.contact-me .social-card {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-me .social-card h4 {
+  color: white;
+}
+
+.contact-me .social-card img {
+  height: 60px;
+  margin-bottom: 30px;
+  width: 60px;
+}
+
+.contact-me .social-card .twitter {
+  border-radius: 5px;
+  padding: 30px 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: none;
+  background-color: #26a6d1;
+}
+
+.contact-me .social-card .mail {
+  border-radius: 5px;
+  padding: 30px 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: none;
+  background-color: #f5584b;
+}
+
+.contact-me .social-card .github {
+  border-radius: 5px;
+  padding: 30px 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: none;
+  background-color: black;
+}
+
+.contact-me .social-card .tvtime {
+  border-radius: 5px;
+  padding: 30px 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: none;
+  background-color: #2d2d2d;
+}
+
+.contact-me .social-card:hover,
+.contact-me .social-card:focus {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 990px) {
+  .contact-me .social-card {
+    margin: 20px;
+  }
 }
 
 .footer {
