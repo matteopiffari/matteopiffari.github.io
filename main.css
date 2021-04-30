@@ -5,9 +5,26 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #242735;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(94.15deg, #24fe41 0%, #fdfc47.75%, #24fe41 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1ec734;
 }
 
 .navbar-brand {
@@ -55,15 +72,15 @@ h4,
     linear,
     left top,
     right top,
-    from(#24FE41),
-    color-stop(51%, #FDFC47),
-    to(#24FE41)
+    from(#24fe41),
+    color-stop(51%, #fdfc47),
+    to(#24fe41)
   );
   background-image: linear-gradient(
     to right,
-    #24FE41 0%,
-    #FDFC47 51%,
-    #24FE41 100%
+    #24fe41 0%,
+    #fdfc47 51%,
+    #24fe41 100%
   );
 }
 
@@ -198,8 +215,8 @@ section {
 }
 
 .contact-me .social-card {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: none;
   padding: 0;
   text-align: center;
@@ -218,8 +235,8 @@ section {
 .contact-me .social-card .twitter {
   border-radius: 5px;
   padding: 30px 20px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: none;
   background-color: #26a6d1;
 }
@@ -227,8 +244,8 @@ section {
 .contact-me .social-card .mail {
   border-radius: 5px;
   padding: 30px 20px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: none;
   background-color: #f5584b;
 }
@@ -236,8 +253,8 @@ section {
 .contact-me .social-card .github {
   border-radius: 5px;
   padding: 30px 20px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: none;
   background-color: black;
 }
@@ -245,8 +262,8 @@ section {
 .contact-me .social-card .tvtime {
   border-radius: 5px;
   padding: 30px 20px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: none;
   background-color: #2d2d2d;
 }
