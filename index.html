@@ -2,224 +2,401 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Matteo Piffari</title>
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="./assets/img/icon.png">
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/img/logo.png">
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <title>Matteo Piffari</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+	<!-- FontAwesome JS -->
+	<script defer src="assets/fontawesome/js/all.js"></script>
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/style.min.css">
+
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div><br></div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
-                </ul>
-            </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
+	<header class="header text-center">
+		<div class="force-overflow">
+			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Matteo Piffari</a></h1>
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title"><span class="home__title-color">Matteo Piffari.</span></h1>
-                <p class="home__sub">Hi, my name is Matteo. I’m a novice <span class="green-words">full-stack
-                        developer</span> & <span class="green-words">UI/UX designer</span>.</p>
-                <br><br>
-                <a href="#contact" class="button">Contact me</a>
-            </div>
-            <br><br><br><br><br><br><br>
+			<nav class="navbar navbar-expand-lg navbar-dark">
 
-            <div class="home__img">
-                <img src="assets/img/perfil.png" alt="">
-            </div>
-        </section>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
+				<div id="navigation" class="collapse navbar-collapse flex-column">
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/img/logo.png" alt="image">
 
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About me</h2>
+						<div class="bio mb-3">👋Hey! I'm Matteo Piffari and I'm a freelance fullstack developer
+							passionate about cybersecurity with an obsession for
+							cars, bikes and videogames</div>
+						<ul class="social-list list-inline py-2 mx-auto">
+							<li class="list-inline-item"><a href="https://x.com/matteopiffari"><i
+										class="fa-brands fa-x-twitter fa-fw"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/matteopiffari/"><i
+										class="fa-brands fa-linkedin-in fa-fw"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="https://github.com/matteopiffari"><i
+										class="fa-brands fa-github-alt fa-fw"></i></a>
+							</li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/matteopiffari/"><i
+										class="fa-brands fa-instagram fa-fw"></i></a>
+							</li>
+						</ul>
+						<hr>
+					</div>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="https://source.unsplash.com/wl8hZoJBSU8/900x900" alt="">
-                </div>
+					<ul class="navbar-nav flex-column text-start">
+						<li class="nav-item">
+							<a class="nav-link active" id="aboutLink" onclick="changeActive('aboutLink')"
+								href="#about"><i class="fas fa-user fa-fw me-2"></i>About
+								Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="skillsLink" onclick="changeActive('skillsLink')" href="#skills"><i
+									class="fas fa-laptop-code fa-fw me-2"></i>Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="carrerLink" onclick="changeActive('carrerLink')" href="#carrer"><i
+									class="fas fa-briefcase fa-fw me-2"></i>Carrer</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="projectsLink" onclick="changeActive('projectsLink')"
+								href="#projects"><i class="fas fa-file-alt fa-fw me-2"></i>Projects</a>
+						</li>
+					</ul>
 
-                <div>
-                    <h2 class="about__subtitle">About me</h2>
-                    <p class="about__text">Hey, I'm an Italian student and I love programming and the whole IT world. I
-                        started learning to develop web in 2020 due to Covid-19 and still today I do some projects that
-                        you can find on my <a href="https://www.github.com/matteopiffari" target="_blank"><span
-                                class="green-words">Github profile</span></a>!
-                        <br>At the moment I am looking to improve my skills with Linux, cybersecurity and back-end
-                        development.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-                <div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <img src="assets/img/Coding-1320568096072194118_0.svg" class="skills__image">
-                            <div>
-                                <span class="skills__name">General Developer</span>
-                                <br>
-                                <span class="skills__text">I create windows programs with c# & some bots/scripts with
-                                    python</span>
-                            </div>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <img src="assets/img/html_logo.png" class="skills__image">
-                            <div>
-                                <span class="skills__name">Web Developer</span>
-                                <br>
-                                <span class="skills__text">I create front-end and back-end site with HTML, CSS,
-                                    javascript, based on what customers ask me for</span>
-                            </div>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <img src="assets/img/figma_logo.png" class="skills__image__f">
-                            <div>
-                                <span class="skills__name">Designer</span>
-                                <br>
-                                <span class="skills__text">I have been using Figma for about a year to create my mockups
-                                    for almost everything</span>
-                            </div>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="https://source.unsplash.com/cVUPic1cbd4/1600x900" alt="" class="skills__img">
-                </div>
-            </div>
-        </section>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <!--===== PROJECTS =====-->
-        <section class="projects" id="Projects">
-            <br><br><br>
-            <h2 class="section-title">Projects</h2>
-
-            <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <img class="proj__img" src="assets/img/TorchFlowLogo.png">
-                        <br>
-                        <h1 class="about__subtitle">TorchFlow</h1>
-                        <p class="about__text">Search management software in the operating system and on any website in
-                            a simple,
-                            functional and fast way. Totally customizable</p>
-                        <br>
-                        <p class="about__text"><a href="https://github.com/phoenixpixel-it/TorchFlow"
-                                target="_blank"><button>More</button></a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                        <img class="proj__img" src="assets/img/EasyIPScanner.svg">
-                        <br>
-                        <h1 class="about__subtitle">EasyIPScanner</h1>
-                        <p class="about__text">A simple local IP scanner made in c#</p>
-                        <br>
-                        <p class="about__text"><a href="https://github.com/matteopiffari/EasyIPScanner"
-                                target="_blank"><button>More</button></a>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                        <img class="proj__img" src="assets/img/Amazon_disp.svg">
-                        <br>
-                        <h1 class="about__subtitle">Check Amazon availability</h1>
-                        <p class="about__text">A simple python script that checks every hour if a product on amazon.it
-                            is available
-                            and then send you a message with telegram</p>
-                        <br>
-                        <p class="about__text"><a href="https://github.com/matteopiffari/Amazon.it-Check-Availability"
-                                target="_blank"><button>More</button></a>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                        <img class="proj__img" src="assets/img/Workmate.png">
-                        <br>
-                        <h1 class="about__subtitle">Workmate</h1>
-                        <p class="about__text">An open source management software for small businesses</p>
-                        <br>
-                        <p class="about__text"><a href="https://github.com/Workmate-app/Workmate"
-                                target="_blank"><button>More</button></a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <br><br><br><br><br><br><br><br><br>
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact me</h2>
-
-            <div class="contact__container">
-                <a href="https://www.twitter.com/PiffaProject" target="_blank"><input class="mixed__btn" type="image"
-                        src="assets/img/twitter.svg" /></a>
-                <a href="https://www.github.com/matteopiffari" target="_blank"><input class="mixed__btn" type="image"
-                        src="assets/img/github_logo.png" /></a>
-                <a href="mailto:mattipiffi@gmail.com"><input class="mixed__btn" type="image"
-                        src="assets/img/gmail.svg" /></a>
-            </div>
-        </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p>&#169; 2022 copyright all right reserved</p>
-        <p>Gmail icon by: Pixel Icons</p>
-    </footer>
+					<div class="my-2">
+						<a class="btn btn-primary" href="mailto:mattipiffari05@gmail.com"><i
+								class="fas fa-paper-plane me-2"></i>Contact Me</a>
+					</div>
 
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+					<div class="dark-mode-toggle text-center w-100">
+						<hr class="mb-4">
+						<h4 class="toggle-name mb-3 "><i class="fas fa-adjust me-1"></i>Dark Mode</h4>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+						<input class="toggle" id="darkmode" type="checkbox">
+						<label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+
+					</div>
+
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="main-wrapper">
+		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
+			<div class="container" id="about">
+				<div class="profile-teaser row">
+
+					<div class="col">
+						<h2 class="name font-weight-bold mb-1">Matteo Piffari</h2>
+						<div class="tagline mb-3">Full Stack Developer</div>
+						<div class="bio mb-4">
+							I'm a freelance fullstack developer specialized in backend development
+							and cybersecurity. I am passionate about creating efficient and secure software solutions
+							that
+							meet the needs of my clients. In my free time I love to watch F1 and MotoGP.
+						</div>
+						<div class="mb-4">
+							<a class="btn btn-primary me-2 mb-3" href="#carrer"><i
+									class="fas fa-arrow-alt-circle-right me-2"></i><span
+									class="d-none d-md-inline">View</span> Carrer</a>
+						</div>
+					</div>
+
+					<div class="col-md-5 col-lg-5">
+						<img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="overview-section p-3 p-lg-5">
+			<div class="container" id="skills">
+				<h2 class="section-title font-weight-bold mb-3">Skills</h2>
+				<div class="row">
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-html5 me-2"></i><i
+									class="fa-brands fa-css3-alt"></i></div>
+							<h3 class="item-title">HTML &amp; CSS</h3>
+							<div class="item-desc">I build responsive and modern web interfaces using clean HTML and
+								CSS, with a focus on cross-browser compatibility and best practices.</div>
+						</div>
+					</div>
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-php"></i></div>
+							<h3 class="item-title">PHP</h3>
+							<div class="item-desc">I develop dynamic websites and backend systems with PHP, integrating
+								databases, form handling, and authentication processes.</div>
+						</div>
+					</div>
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-js-square"></i></div>
+							<h3 class="item-title">Vanilla JavaScript</h3>
+							<div class="item-desc">I bring websites to life with interactive and dynamic features using
+								JavaScript, enhancing user experience on the frontend.</div>
+						</div>
+					</div>
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-node-js me-2"></i><i
+									class="fa-brands fa-npm"></i>
+							</div>
+							<h3 class="item-title">Node.js &amp; npm</h3>
+							<div class="item-desc">I create scalable and efficient server-side applications with
+								Node.js, managing dependencies and automation through npm.</div>
+						</div>
+					</div>
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-solid fa-terminal"></i></div>
+							<h3 class="item-title">Bash</h3>
+							<div class="item-desc">I write Bash scripts to automate tasks, manage system operations, and
+								improve workflow efficiency in Unix/Linux environments.</div>
+						</div>
+					</div>
+
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-python"></i></div>
+							<h3 class="item-title">Python</h3>
+							<div class="item-desc">I use Python for scripting, automation, and problem-solving, with a
+								strong grasp of logic, debugging, and clean code practices.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-java me-2"></i></div>
+							<h3 class="item-title">Java</h3>
+							<div class="item-desc">I build cross-platform applications in Java, applying object-oriented
+								programming and robust error handling techniques.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-solid fa-c"></i>++</div>
+							<h3 class="item-title">C++</h3>
+							<div class="item-desc">I write high-performance applications in C++, with experience in
+								memory management and low-level system programming.</div>
+						</div>
+					</div>
+					<div cl <div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-solid fa-c"></i>#</div>
+							<h3 class="item-title">C#</h3>
+							<div class="item-desc">I develop robust desktop and web applications using C#, with
+								experience in object-oriented programming and the .NET ecosystem.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-solid fa-database me-2"></i></div>
+							<h3 class="item-title">MySQL, MariaDB, MongoDB &amp; Redis</h3>
+							<div class="item-desc">I design and manage relational and NoSQL databases, optimizing
+								queries, data models, and performance based on project needs.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-linux me-2"></i></div>
+							<h3 class="item-title">Linux</h3>
+							<div class="item-desc">I use Linux as a daily development environment, managing servers,
+								scripting, and customizing tools for efficient workflows.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-docker me-2"></i></div>
+							<h3 class="item-title">Docker</h3>
+							<div class="item-desc">I containerize applications with Docker for consistent deployment
+								across environments, ensuring portability and reliability.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-git-alt me-2"></i></div>
+							<h3 class="item-title">Git</h3>
+							<div class="item-desc">I manage code versions with Git, collaborating through platforms like
+								GitHub for seamless team development and code tracking.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-solid fa-server me-2"></i></div>
+							<h3 class="item-title">Manage Server</h3>
+							<div class="item-desc">I configure and maintain Linux servers, managing services, security,
+								monitoring, and deployments in production-ready environments.</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-brands fa-aws me-2"></i><i
+									class="fa-solid fa-cloud me-2"></i></div>
+							<h3 class="item-title">Cloud</h3>
+							<div class="item-desc">I work with cloud platforms to deploy, scale, and manage applications
+								efficiently, leveraging tools like virtual machines, storage, and serverless functions.
+							</div>
+						</div>
+					</div>
+					<div class="item col-6 col-lg-3">
+						<div class="item-inner">
+							<div class="item-icon"><i class="fa-solid fa-shield-halved me-2"></i></div>
+							<h3 class="item-title">Cybersecurity</h3>
+							<div class="item-desc">I apply core cybersecurity principles to protect data, secure
+								applications, and defend against common threats and vulnerabilities.</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<div class="container">
+			<hr>
+		</div>
+
+		<section class="featured-section p-3 p-lg-5">
+			<div class="container" id="carrer">
+				<h2 class="section-title font-weight-bold mb-5">Carrer</h2>
+
+				<div class="row">
+					<div class="col">
+						<div>
+							<div class="bg-primary-subtle d-md-flex justify-content-md-between p-3 mb-3">
+								<div class="mb-3 mb-md-0">
+									<p class="fw-bold mb-1">2019 - 2024</p>
+									<p class="mb-0">Graduated in computer science with a final grade of 91/100
+									</p>
+								</div>
+								<div class="text-md-end">
+									<p class="text-primary mb-1">🏫 I.T.I.S. P. Paleocapa</p>
+									<p class="mb-0">Bergamo, Italy</p>
+								</div>
+							</div>
+							<div class="d-md-flex justify-content-md-between p-3 mb-3">
+								<div class="mb-3 mb-md-0">
+									<p class="fw-bold mb-1">2024 - Now</p>
+									<p class="mb-0">Studying computer&nbsp;engineering</p>
+								</div>
+								<div class="text-md-end">
+									<p class="text-primary mb-1"><strong><span
+												style="color: rgb(37, 99, 235);">🏫&nbsp;</span></strong>UNIBG
+									</p>
+									<p class="mb-0">Bergamo, Italy</p>
+								</div>
+							</div>
+							<div class="bg-primary-subtle d-md-flex justify-content-md-between p-3 mb-3">
+								<div class="mb-3 mb-md-0">
+									<p class="fw-bold mb-1">2024 - Now</p>
+									<p class="mb-0">Virtual Machine and IT Infrastructure Management</p>
+								</div>
+								<div class="text-md-end">
+									<p class="text-primary mb-1">S.O.M. Elettrocablaggi</p>
+									<p class="mb-0">Grassobbio, Italy</p>
+								</div>
+							</div>
+							<div class="d-md-flex justify-content-md-between p-3 mb-3">
+								<div class="mb-3 mb-md-0">
+									<p class="fw-bold mb-1">2025 - Now</p>
+									<p class="mb-0">Freelancer</p>
+								</div>
+								<div class="text-md-end">
+									<p class="text-primary mb-1">🌍</p>
+									<p class="mb-0">Everywhere</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</section>
+
+		<div class="container">
+			<hr>
+		</div>
+
+		<section class="featured-section p-3 p-lg-5">
+			<div class="container" id="projects">
+				<h2 class="section-title font-weight-bold mb-5">Projects</h2>
+				<div class="row">
+					<div class="col-md-6 mb-5">
+						<div class="card project-card">
+							<div class="row no-gutters">
+								<div class="col-12 col-xl-5 card-img-holder">
+									<img src="assets/img/MyWorkMate-Logo.svg" style="max-width: 70%; margin-left: 10%;"
+										class="card-img" alt="image">
+								</div>
+								<div class="col-12 col-xl-7">
+									<div class="card-body">
+										<h5 class="card-title"><a href="https://www.myworkmate.it"
+												class="theme-link">MyWorkMate</a></h5>
+										<p class="card-text">Management for SMEs.</p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="https://www.myworkmate.it"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="https://www.myworkmate.it">
+										<i class="fas fa-eye me-2"></i>View Project
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Dark Mode -->
+	<script src="assets/plugins/js-cookie.min.js"></script>
+	<script src="assets/js/dark-mode.js"></script>
+
+	<script>
+
+		function changeActive(linkId) {
+			const links = document.querySelectorAll('.nav-link');
+			links.forEach(link => {
+				link.classList.remove('active');
+			});
+
+			const activeLink = document.getElementById(linkId);
+			if (activeLink) {
+				activeLink.classList.add('active');
+			}
+		}
+
+	</script>
+
 </body>
 
 </html>
