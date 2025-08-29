@@ -1,0 +1,179 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.service-details {
+  .service-details-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+
+    .swiper-wrapper {
+      height: auto !important;
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: var(--contrast-color);
+        opacity: 0.5;
+        transition: 0.3s;
+
+        &.swiper-pagination-bullet-active {
+          opacity: 1;
+          width: 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .content {
+    h3 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      margin-bottom: 15px;
+    }
+
+    .features {
+      .feature-box {
+        padding: 20px;
+        background: var(--surface-color);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        transition: 0.3s;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        i {
+          font-size: 24px;
+          color: var(--accent-color);
+          margin-right: 15px;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .service-info {
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+    }
+
+    .info-item {
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      i {
+        font-size: 24px;
+        color: var(--accent-color);
+        margin-bottom: 10px;
+      }
+
+      h5 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        margin: 0;
+      }
+    }
+  }
+
+  .related-services {
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+    }
+
+    .service-item {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      i {
+        font-size: 24px;
+        color: var(--accent-color);
+        margin-bottom: 10px;
+      }
+
+      h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+
+        a {
+          color: var(--heading-color);
+          transition: 0.3s;
+
+          &:hover {
+            color: var(--accent-color);
+          }
+        }
+      }
+
+      p {
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    .service-info,
+    .related-services {
+      margin-top: 30px;
+    }
+  }
+}

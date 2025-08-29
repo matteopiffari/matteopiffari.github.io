@@ -1,0 +1,88 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  --background-color: #1b1b1b;
+  --contrast-color: #444444;
+  color: var(--default-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  width: 300px;
+  transition: all ease-in-out 0.3s;
+  overflow-y: auto;
+  z-index: 997;
+
+  .header-container {
+    border-radius: 20px;
+    padding: 15px;
+    background-color: var(--background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  }
+
+  .social-links {
+    margin: 0 0 10px 0;
+
+    a {
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: color-mix(in srgb, var(--default-color), transparent 90%);
+      color: var(--default-color);
+      margin: 0 2px;
+      border-radius: 50%;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      transition: 0.3s;
+
+      &:hover {
+        color: var(--contrast-color);
+        background: var(--accent-color);
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    ~main,
+    ~#footer {
+      margin-left: 330px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    left: -100%;
+  }
+
+  &.header-show {
+    left: 0;
+  }
+
+  .header-toggle {
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    transition: background-color 0.3s;
+
+    &:hover {
+      color: var(--contrast-color);
+      background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+    }
+  }
+}

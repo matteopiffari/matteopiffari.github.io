@@ -1,0 +1,26 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  padding: 0 0 40px 0;
+  position: relative;
+
+  .copyright {
+    padding-top: 40px;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .credits {
+    margin-top: 4px;
+    font-size: 13px;
+    text-align: center;
+  }
+}

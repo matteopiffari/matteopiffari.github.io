@@ -1,0 +1,105 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats {
+  .stats-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .stats-item {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--surface-color), transparent 5%), var(--surface-color));
+    border-radius: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+      .icon-wrapper {
+        transform: scale(1.1);
+      }
+    }
+
+    &:nth-child(1) .icon-wrapper {
+      background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+
+      i {
+        color: color-mix(in srgb, var(--accent-color), transparent 10%);
+      }
+    }
+
+    &:nth-child(2) .icon-wrapper {
+      background-color: color-mix(in srgb, #ff7e00, transparent 85%);
+
+      i {
+        color: color-mix(in srgb, #ff7e00, transparent 10%);
+      }
+    }
+
+    &:nth-child(3) .icon-wrapper {
+      background-color: color-mix(in srgb, #00c875, transparent 85%);
+
+      i {
+        color: color-mix(in srgb, #00c875, transparent 10%);
+      }
+    }
+
+    &:nth-child(4) .icon-wrapper {
+      background-color: color-mix(in srgb, #e83e8c, transparent 85%);
+
+      i {
+        color: color-mix(in srgb, #e83e8c, transparent 10%);
+      }
+    }
+
+    .icon-wrapper {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      transition: transform 0.3s ease;
+
+      i {
+        font-size: 36px;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 10px;
+      line-height: 1;
+      font-family: var(--heading-font);
+    }
+
+    p {
+      color: var(--default-color);
+      font-size: 18px;
+      margin: 0;
+      font-weight: 500;
+      font-family: var(--heading-font);
+      opacity: 0.8;
+    }
+  }
+}

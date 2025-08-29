@@ -1,0 +1,143 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume {
+  .resume-side {
+    background-color: var(--surface-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
+    .profile-img {
+      text-align: center;
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 5px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+        border-radius: 50%;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--heading-color);
+      font-weight: 600;
+    }
+
+    .contact-info {
+      li {
+        margin-bottom: 1rem;
+        color: var(--default-color);
+
+        i {
+          width: 25px;
+          color: var(--accent-color);
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .skill-item {
+      margin-bottom: 1.5rem;
+
+      span {
+        font-size: 0.9rem;
+        color: var(--default-color);
+      }
+
+      .progress {
+        height: 8px;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        border-radius: 4px;
+        margin-top: 0.5rem;
+
+        .progress-bar {
+          background-color: var(--accent-color);
+          width: 0;
+          transition: width 1s ease;
+        }
+      }
+    }
+  }
+
+  .resume-section {
+    margin-bottom: 3rem;
+
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      color: var(--heading-color);
+      font-weight: 600;
+
+      i {
+        color: var(--accent-color);
+      }
+    }
+
+    .resume-item {
+      padding-left: 1.5rem;
+      border-left: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+      margin-bottom: 2rem;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        left: -9px;
+        top: 0;
+        background: var(--accent-color);
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--heading-color);
+        font-weight: 600;
+      }
+
+      h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: var(--accent-color);
+      }
+
+      .company {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        color: var(--heading-color);
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+
+      ul {
+        padding-left: 1.2rem;
+
+        li {
+          margin-bottom: 0.5rem;
+          color: var(--default-color);
+        }
+      }
+
+      p {
+        color: var(--default-color);
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .resume-side {
+      margin-bottom: 2rem;
+    }
+  }
+}

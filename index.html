@@ -2,426 +2,1044 @@
 <html lang="en">
 
 <head>
-	<title>Matteo Piffari</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Matteo Piffari</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/logo.png">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-	<!-- FontAwesome JS -->
-	<script defer src="assets/fontawesome/js/all.js"></script>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-	<!-- Theme CSS -->
-	<link id="theme-style" rel="stylesheet" href="assets/css/style.min.css">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-	<script type="text/javascript" src="//embeds.iubenda.com/widgets/41662cc0-c41c-45fd-9882-1d6501a79e72.js"></script>
+  <script type="text/javascript" src="//embeds.iubenda.com/widgets/41662cc0-c41c-45fd-9882-1d6501a79e72.js"></script>
 </head>
 
-<body>
-	<header class="header text-center">
-		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Matteo Piffari</a></h1>
+<body class="index-page">
 
-			<nav class="navbar navbar-expand-lg navbar-dark">
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
-					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact me</a></li>
+        </ul>
+      </nav>
 
-				<div id="navigation" class="collapse navbar-collapse flex-column">
-					<div class="profile-section pt-3 pt-lg-0">
-						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/img/logo.png" alt="image">
+      <div class="social-links text-center">
+        <a href="https://github.com/matteopiffari" class="github" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/matteopiffari" class="linkedin" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/matteopiffari" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/matteopiffari" class="instagram" target="_blank"><i
+            class="bi bi-instagram"></i></a>
+      </div>
 
-						<div class="bio mb-3">👋Hey! I'm Matteo Piffari and I'm a freelance fullstack developer
-							passionate about cybersecurity with an obsession for
-							cars, bikes and videogames</div>
-						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="https://x.com/matteopiffari"><i
-										class="fa-brands fa-x-twitter fa-fw"></i></a>
-							</li>
-							<li class="list-inline-item"><a href="https://www.linkedin.com/in/matteopiffari/"><i
-										class="fa-brands fa-linkedin-in fa-fw"></i></a>
-							</li>
-							<li class="list-inline-item"><a href="https://github.com/matteopiffari"><i
-										class="fa-brands fa-github-alt fa-fw"></i></a>
-							</li>
-							<li class="list-inline-item"><a href="https://www.instagram.com/matteopiffari/"><i
-										class="fa-brands fa-instagram fa-fw"></i></a>
-							</li>
-						</ul>
-						<hr>
-					</div>
+    </div>
 
-					<ul class="navbar-nav flex-column text-start">
-						<li class="nav-item">
-							<a class="nav-link active" id="aboutLink" onclick="changeActive('aboutLink')"
-								href="#about"><i class="fas fa-user fa-fw me-2"></i>About
-								Me</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="skillsLink" onclick="changeActive('skillsLink')" href="#skills"><i
-									class="fas fa-laptop-code fa-fw me-2"></i>Skills</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="carrerLink" onclick="changeActive('carrerLink')" href="#career"><i
-									class="fas fa-briefcase fa-fw me-2"></i>Career</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="projectsLink" onclick="changeActive('projectsLink')"
-								href="#projects"><i class="fas fa-file-alt fa-fw me-2"></i>Projects</a>
-						</li>
-					</ul>
+  </header>
 
-					<div class="my-2">
-						<a class="btn btn-primary" href="mailto:mattipiffari05@gmail.com"><i
-								class="fas fa-paper-plane me-2"></i>Contact Me</a>
-					</div>
+  <main class="main">
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
 
-					<div class="dark-mode-toggle text-center w-100">
-						<hr class="mb-4">
-						<h4 class="toggle-name mb-3 "><i class="fas fa-adjust me-1"></i>Dark Mode</h4>
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
 
-						<input class="toggle" id="darkmode" type="checkbox">
-						<label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+      <div class="hero-content">
 
-					</div>
+        <div class="container">
+          <div class="row align-items-center">
 
-				</div>
-			</nav>
-		</div>
-	</header>
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Matteo Piffari</h1>
+                <p class="lead">I'm a <span class="typed"
+                    data-typed-items="Full-Stack Developer, Software Engineer, Freelance Tech Consultant"></span></p>
+                <p class="description">👋Hey! I'm Matteo Piffari and I'm a freelance fullstack developer
+                  passionate about cybersecurity with an obsession for
+                  cars, bikes and videogames.</p>
 
-	<div class="main-wrapper">
-		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
-			<div class="container" id="about">
-				<div class="profile-teaser row">
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+              </div>
+            </div>
 
-					<div class="col">
-						<h2 class="name font-weight-bold mb-1">Matteo Piffari</h2>
-						<div class="tagline mb-3">Full Stack Developer</div>
-						<div class="bio mb-4">
-							I'm a freelance fullstack developer specialized in backend development
-							and cybersecurity. I am passionate about creating efficient and secure software solutions
-							that
-							meet the needs of my clients. In my free time I love to watch F1 and MotoGP.
-						</div>
-						<div class="mb-4">
-							<a class="btn btn-primary me-2 mb-3" href="#career"><i
-									class="fas fa-arrow-alt-circle-right me-2"></i><span
-									class="d-none d-md-inline">View</span> Career</a>
-						</div>
-					</div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/profile.jpg" alt="Matteo Piffari" class="profile-image">
+                </div>
+              </div>
+            </div>
 
-					<div class="col-md-5 col-lg-5">
-						<img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
+          </div>
+        </div>
+      </div>
 
-		<section class="overview-section p-3 p-lg-5">
-			<div class="container" id="skills">
-				<h2 class="section-title font-weight-bold mb-3">Skills</h2>
-				<div class="row">
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-html5 me-2"></i><i
-									class="fa-brands fa-css3-alt"></i></div>
-							<h3 class="item-title">HTML &amp; CSS</h3>
-							<div class="item-desc">I build responsive and modern web interfaces using clean HTML and
-								CSS, with a focus on cross-browser compatibility and best practices.</div>
-						</div>
-					</div>
+    </section><!-- /Hero Section -->
 
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-php"></i></div>
-							<h3 class="item-title">PHP</h3>
-							<div class="item-desc">I develop dynamic websites and backend systems with PHP, integrating
-								databases, form handling, and authentication processes.</div>
-						</div>
-					</div>
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-js-square"></i></div>
-							<h3 class="item-title">Vanilla JavaScript</h3>
-							<div class="item-desc">I bring websites to life with interactive and dynamic features using
-								JavaScript, enhancing user experience on the frontend.</div>
-						</div>
-					</div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-node-js me-2"></i><i
-									class="fa-brands fa-npm"></i>
-							</div>
-							<h3 class="item-title">Node.js &amp; npm</h3>
-							<div class="item-desc">I create scalable and efficient server-side applications with
-								Node.js, managing dependencies and automation through npm.</div>
-						</div>
-					</div>
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="assets/img/profile/profile.jpg" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
 
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-solid fa-terminal"></i></div>
-							<h3 class="item-title">Bash</h3>
-							<div class="item-desc">I write Bash scripts to automate tasks, manage system operations, and
-								improve workflow efficiency in Unix/Linux environments.</div>
-						</div>
-					</div>
+              <div class="profile-content">
+                <h3>Matteo Piffari</h3>
+                <p class="profession">Freelance Full-Stack Developer</p>
 
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-python"></i></div>
-							<h3 class="item-title">Python</h3>
-							<div class="item-desc">I use Python for scripting, automation, and problem-solving, with a
-								strong grasp of logic, debugging, and clean code practices.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-java me-2"></i></div>
-							<h3 class="item-title">Java</h3>
-							<div class="item-desc">I build cross-platform applications in Java, applying object-oriented
-								programming and robust error handling techniques.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-solid fa-c"></i>++</div>
-							<h3 class="item-title">C++</h3>
-							<div class="item-desc">I write high-performance applications in C++, with experience in
-								memory management and low-level system programming.</div>
-						</div>
-					</div>
-					<div cl <div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-solid fa-c"></i>#</div>
-							<h3 class="item-title">C#</h3>
-							<div class="item-desc">I develop robust desktop and web applications using C#, with
-								experience in object-oriented programming and the .NET ecosystem.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-solid fa-database me-2"></i></div>
-							<h3 class="item-title">MySQL, MariaDB, MongoDB &amp; Redis</h3>
-							<div class="item-desc">I design and manage relational and NoSQL databases, optimizing
-								queries, data models, and performance based on project needs.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-linux me-2"></i></div>
-							<h3 class="item-title">Linux</h3>
-							<div class="item-desc">I use Linux as a daily development environment, managing servers,
-								scripting, and customizing tools for efficient workflows.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-docker me-2"></i></div>
-							<h3 class="item-title">Docker</h3>
-							<div class="item-desc">I containerize applications with Docker for consistent deployment
-								across environments, ensuring portability and reliability.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-git-alt me-2"></i></div>
-							<h3 class="item-title">Git</h3>
-							<div class="item-desc">I manage code versions with Git, collaborating through platforms like
-								GitHub for seamless team development and code tracking.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-solid fa-server me-2"></i></div>
-							<h3 class="item-title">Manage Server</h3>
-							<div class="item-desc">I configure and maintain Linux servers, managing services, security,
-								monitoring, and deployments in production-ready environments.</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-brands fa-aws me-2"></i><i
-									class="fa-solid fa-cloud me-2"></i></div>
-							<h3 class="item-title">Cloud</h3>
-							<div class="item-desc">I work with cloud platforms to deploy, scale, and manage applications
-								efficiently, leveraging tools like virtual machines, storage, and serverless functions.
-							</div>
-						</div>
-					</div>
-					<div class="item col-6 col-lg-3">
-						<div class="item-inner">
-							<div class="item-icon"><i class="fa-solid fa-shield-halved me-2"></i></div>
-							<h3 class="item-title">Cybersecurity</h3>
-							<div class="item-desc">I apply core cybersecurity principles to protect data, secure
-								applications, and defend against common threats and vulnerabilities.</div>
-						</div>
-					</div>
-				</div>
+                <div class="contact-links">
+                  <a href="mailto:mattipiffari05@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    mattipiffari05@gmail.com
+                  </a>
+                  <a href="https://www.linkedin.com/in/matteopiffari" class="contact-item" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                    matteopiffari
+                  </a>
+                  <a href="https://github.com/matteopiffari" class="contact-item" target="_blank">
+                    <i class="bi bi-github"></i>
+                    matteopiffari
+                  </a>
+                  <a href="#about" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Bergamo, Italy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-			</div>
-		</section>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">Get to Know Me</span>
+                <h2>Passionate About Creating Digital Experiences</h2>
+              </div>
 
-		<div class="container">
-			<hr>
-		</div>
+              <div class="description">
+                <p>I'm a passionate and versatile Full-Stack Developer with a solid foundation in software development,
+                  system administration, and cybersecurity.</p>
 
-		<section class="featured-section p-3 p-lg-5">
-			<div class="container" id="career">
-				<h2 class="section-title font-weight-bold mb-5">Career</h2>
+                <p>Over time, I’ve developed a broad skill set that spans both
+                  frontend and backend development. From writing clean, semantic HTML and CSS, to managing APIs and
+                  servers with Node.js and Linux</p>
+              </div>
 
-				<div class="row">
-					<div class="col">
-						<div>
-							<div class="bg-primary-subtle d-md-flex justify-content-md-between p-3 mb-3">
-								<div class="mb-3 mb-md-0">
-									<p class="fw-bold mb-1">2019 - 2024</p>
-									<p class="mb-0">Graduated in computer science with a final grade of 91/100
-									</p>
-								</div>
-								<div class="text-md-end">
-									<p class="text-primary mb-1">🏫 I.T.I.S. P. Paleocapa</p>
-									<p class="mb-0">Bergamo, Italy</p>
-								</div>
-							</div>
-							<div class=" d-md-flex justify-content-md-between p-3 mb-3">
-								<div class="mb-3 mb-md-0">
-									<p class="fw-bold mb-1">Jun 2023</p>
-									<p class="mb-0">Mobile Developer - School Internship
-									</p>
-								</div>
-								<div class="text-md-end">
-									<p class="text-primary mb-1">Tecnobody</p>
-									<p class="mb-0">Dalmine, Italy</p>
-								</div>
-							</div>
-							<div class="bg-primary-subtle d-md-flex justify-content-md-between p-3 mb-3">
-								<div class="mb-3 mb-md-0">
-									<p class="fw-bold mb-1">2024 - Now</p>
-									<p class="mb-0">Studying computer&nbsp;engineering</p>
-								</div>
-								<div class="text-md-end">
-									<p class="text-primary mb-1"><strong><span
-												style="color: rgb(37, 99, 235);">🏫&nbsp;</span></strong>UNIBG
-									</p>
-									<p class="mb-0">Bergamo, Italy</p>
-								</div>
-							</div>
-							<div class="d-md-flex justify-content-md-between p-3 mb-3">
-								<div class="mb-3 mb-md-0">
-									<p class="fw-bold mb-1">2024 - Now</p>
-									<p class="mb-0">Virtual Machine and IT Infrastructure Management</p>
-								</div>
-								<div class="text-md-end">
-									<p class="text-primary mb-1">S.O.M. Elettrocablaggi</p>
-									<p class="mb-0">Grassobbio, Italy</p>
-								</div>
-							</div>
-							<div class="bg-primary-subtle d-md-flex justify-content-md-between p-3 mb-3">
-								<div class="mb-3 mb-md-0">
-									<p class="fw-bold mb-1">2025 - Now</p>
-									<p class="mb-0">Freelancer</p>
-								</div>
-								<div class="text-md-end">
-									<p class="text-primary mb-1">🌍</p>
-									<p class="mb-0">Everywhere</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">300K+</div>
+                  <div class="stat-label">Lines of Code Written</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">3+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">99%</div>
+                  <div class="stat-label">Clients Satisfaction</div>
+                </div>
+              </div>
 
-		</section>
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Specialization</span>
+                    <span class="detail-value">Backend Development</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Experience Level</span>
+                    <span class="detail-value">Experienced Developer</span>
+                  </div>
+                </div>
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">Computer Science, UNI BG</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Languages</span>
+                    <span class="detail-value">Italian, English</span>
+                  </div>
+                </div>
+              </div>
 
-		<div class="container">
-			<hr>
-		</div>
+              <div class="cta-section">
+                <a href="assets/misc/cv.pdf" class="btn btn-primary">
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+                <a href="mailto:mattipiffari05@gmail.com" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<section class="featured-section p-3 p-lg-5">
-			<div class="container" id="projects">
-				<h2 class="section-title font-weight-bold mb-5">Projects</h2>
-				<div class="row">
-					<div class="col-md-6 mb-5">
-						<div class="card project-card">
-							<div class="row no-gutters">
-								<div class="col-12 col-xl-5 card-img-holder">
-									<img src="assets/img/MyWorkMate-Logo.svg" style="max-width: 70%; margin-left: 10%;"
-										class="card-img" alt="image">
-								</div>
-								<div class="col-12 col-xl-7">
-									<div class="card-body">
-										<h5 class="card-title"><a href="https://www.myworkmate.it"
-												class="theme-link">MyWorkMate</a></h5>
-										<p class="card-text">Management for SMEs.</p>
-									</div>
-								</div>
-							</div>
-							<div class="link-mask">
-								<a class="link-mask-link" href="https://www.myworkmate.it"></a>
-								<div class="link-mask-text">
-									<a class="btn btn-secondary" href="https://www.myworkmate.it">
-										<i class="fas fa-eye me-2"></i>View Project
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+      </div>
 
-			</div>
-		</section>
+    </section><!-- /About Section -->
 
-	</div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
 
-	<footer class="footer text-center p-3 p-lg-5">
-		<div class="container">
-			<a href="https://www.iubenda.com/privacy-policy/52127441/cookie-policy"
-				class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie
-				Policy</a>
-			<script
-				type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
-			<a href="https://www.iubenda.com/privacy-policy/52127441"
-				class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy
-				Policy</a>
-			<script
-				type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
-		</div>
-	</footer>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>The toolbox I rely on to bring ideas to life, from backend logic to full-stack applications.</p>
+      </div><!-- End Section Title -->
 
-	<!-- Javascript -->
-	<script src="assets/plugins/popper.min.js"></script>
-	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-	<!-- Dark Mode -->
-	<script src="assets/plugins/js-cookie.min.js"></script>
-	<script src="assets/js/dark-mode.js"></script>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Front-end Development</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>HTML/CSS</h4>
+                  </div>
+                  <div class="skill-tooltip">Expert knowledge of semantic HTML5 and modern CSS3, with a focus on
+                    accessibility and responsive design.</div>
+                </div>
 
-	<script>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>JavaScript</h4>
+                  </div>
+                  <div class="skill-tooltip">Proficient in modern JavaScript, with experience in building interactive
+                    and dynamic web applications.</div>
+                </div>
 
-		function changeActive(linkId) {
-			const links = document.querySelectorAll('.nav-link');
-			links.forEach(link => {
-				link.classList.remove('active');
-			});
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Vue.js</h4>
+                  </div>
+                  <div class="skill-tooltip">Experience with component-based architecture, state management and
+                    building scalable interfaces.
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Frontend Skills -->
+          </div>
 
-			const activeLink = document.getElementById(linkId);
-			if (activeLink) {
-				activeLink.classList.add('active');
-			}
-		}
+          <div class="col-lg-4">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Back-end Development</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Node.js</h4>
+                  </div>
+                  <div class="skill-tooltip">Development with Express, RESTful APIs, authentication with JWT and secure
+                    backend services.</div>
+                </div>
 
-	</script>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Python</h4>
+                  </div>
+                  <div class="skill-tooltip">Development of robust applications and scripts; experienced with Django for
+                    building secure and scalable web platforms.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Java</h4>
+                  </div>
+                  <div class="skill-tooltip"> Solid foundation in object-oriented programming and backend application
+                    development.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>C++ / C#</h4>
+                  </div>
+                  <div class="skill-tooltip">C++ and C# development for high-performance applications</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>PHP / Laravel</h4>
+                  </div>
+                  <div class="skill-tooltip">Backend development with Laravel, focusing on structured, maintainable and
+                    scalable applications.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>MySQL, MariaDB, MongoDB & Redis</h4>
+                  </div>
+                  <div class="skill-tooltip">Skilled in relational and NoSQL database design, optimization and complex
+                    queries.</div>
+                </div>
+              </div>
+            </div><!-- End Backend Skills -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Cloud</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Docker / Kubernetes</h4>
+                  </div>
+                  <div class="skill-tooltip">Containerization, orchestration and deployment of applications in scalable
+                    environments.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Linux / Management</h4>
+                  </div>
+                  <div class="skill-tooltip">Proficient in Linux systems, server administration and performance
+                    optimization.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Cybersecurity</h4>
+                  </div>
+                  <div class="skill-tooltip">Experience with security best practices, secure coding practices and
+                    vulnerability awareness.
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Git</h4>
+                  </div>
+                  <div class="skill-tooltip">Experience with version control systems, branching strategies and
+                    collaborative workflows
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Frontend Skills -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>A blend of academic learning and professional practice that defines my approach to technology.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column with experience -->
+
+          <div class="col-lg-6 ps-4 ps-lg-5">
+            <!-- Experience Section -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
+
+              <div class="resume-item">
+                <h4>Freelancer</h4>
+                <h5>2025 - Now</h5>
+                <p class="company"><i class="bi bi-globe-americas"></i> Everywhere</p>
+                <ul>
+                  <li>Design and develop websites, web apps and custom SaaS platforms</li>
+                  <li>Technical support to companies, with particular attention to:</li>
+                  <ul>
+                    <li>IT security</li>
+                    <li>Server management (hosting, deployment, backup, monitoring)</li>
+                    <li>Optimization of digital infrastructures</li>
+                  </ul>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>IT Manager</h4>
+                <h5>2024 - Now</h5>
+                <p class="company"><i class="bi bi-building"></i> S.O.M. Elettrocablaggi</p>
+                <ul>
+                  <li>Implementing and monitoring security measures, managing threats and vulnerabilities</li>
+                  <li>Configuring and maintaining the company network, including firewalls and VLANs</li>
+                  <li>Configuring, managing and maintaining virtualized environments</li>
+                  <li>Configuration and maintenance of operating systems and servers, monitoring network performance
+                  </li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Mobile Developer - School Internship</h4>
+                <h5>2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Tecnobody</p>
+                <ul>
+                  <li>Internship in which I designed with my classmates a mobile application that allows the scanning of
+                    a food product through its barcode and to discover if it contains allergens that are dangerous for
+                    the user</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right column with education -->
+          <div class="col-lg-6 ps-4 ps-lg-5">
+            <!-- Education Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+              <div class="resume-item">
+                <h4>Computer engineering</h4>
+                <h5>2024 - Now</h5>
+                <p class="company"><i class="bi bi-mortarboard"></i> UNI BG</p>
+                <p>Studying computer engineering</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Computer science</h4>
+                <h5>2019 - 2024</h5>
+                <p class="company"><i class="bi bi-building"></i> I.T.I.S. P. Paleocapa</p>
+                <p>Graduated in computer science with a final grade of 91/100.</p>
+              </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+              <h3><i class="bi bi-award me-2"></i>Certifications</h3>
+
+              <div class="resume-item">
+                <h4>6 Cybersecurity and Pentesting certifications - TryHackMe</h4>
+                <h5>2022</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Linux - Sorint</h4>
+                <h5>2022</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Data visualization, web design and javascript - FreeCodeCamp</h4>
+                <h5>2021</h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>A sneak peek into the projects that kept me coding late at night (and running on coffee).</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">All Projects</li>
+                  <li data-filter=".filter-web">Websites</li>
+                  <li data-filter=".filter-landing">Landing Pages</li>
+                  <li data-filter=".filter-webapps">Web Apps</li>
+                  <li data-filter=".filter-desktopapps">Desktop Apps</li>
+                  <li data-filter=".filter-contribution">Open Source Contributions</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-webapps">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/myworkmate.jpg" class="img-fluid" alt="Portfolio Image"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web App</span>
+                        <h4>My Work Mate</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/myworkmate.jpg" class="glightbox" title="My Work Mate"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="https://myworkmate.it" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-contribution">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/tldr.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Open Source Contributions</span>
+                        <h4>TLDR</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/tldr.jpg" class="glightbox" title="TLDR"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="https://github.com/tldr-pages/tldr" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-desktopapps">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/privy.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Desktop App</span>
+                        <h4>Privy</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/privy.jpg" class="glightbox" title="Privy"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/comingSoon.png" class="img-fluid" alt="Portfolio Image"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web</span>
+                        <h4>Coming Soon</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/comingSoon.png" class="glightbox" title="Natural Growth"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-landing">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/comingSoon.png" class="img-fluid" alt="Portfolio Image"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Landing page</span>
+                        <h4>Coming Soon</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/comingSoon.png" class="glightbox" title="Urban Stories"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-webapps">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/comingSoon.png" class="img-fluid" alt="Portfolio Image"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web app</span>
+                        <h4>Coming Soon</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/comingSoon.png" class="glightbox" title="Digital Experience"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+              </div><!-- End Portfolio Container -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Not just websites and apps: I also help businesses set up, manage, and optimize their IT systems, both
+          on-premise and in the cloud.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="service-header">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="service-intro">
+                <h2 class="service-heading">
+                  <div>From code to cloud</div>
+                  <div><span>I’ve got you covered</span></div>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="web.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="web.html">
+                  Websites & <span>Landing Pages</span>
+                </a>
+              </h3>
+              <p>
+                Modern, responsive, and performance-driven websites or landing pages, designed to highlight your brand
+                and convert visitors into clients.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-braces"></i>
+              </div>
+              <a href="webapp.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="webapp.html">
+                  Web Applications<br><br>
+                </a>
+              </h3>
+              <p>
+                Powerful and intuitive web apps tailored to your business, designed to grow with your needs and deliver
+                real results. <br><br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-window-sidebar"></i>
+              </div>
+              <a href="desktop.html"
+                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="desktop.html">
+                  Desktop Applications<br><br>
+                </a>
+              </h3>
+              <p>
+                Tailored desktop software to simplify workflows, automate processes, and provide tools that work
+                seamlessly on your infrastructure.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-hdd-stack"></i>
+              </div>
+              <a href="cloud.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="cloud.html">
+                  Server Management & <span>Cloud Solutions</span>
+                </a>
+              </h3>
+              <p>
+                Setup, configuration, and management of servers and VPS, with reliable cloud-based hosting solutions to
+                keep your applications secure and online.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-cloud"></i>
+              </div>
+              <a href="devops.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="devops.html">
+                  DevOps & <span>CI/CD</span>
+                </a>
+              </h3>
+              <p>
+                Streamlining development and deployment with Docker, containerization, and Kubernetes setups, making
+                delivery faster and more efficient.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-lock"></i>
+              </div>
+              <a href="security.html"
+                class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="security.html">
+                  Security & <span>Compliance</span>
+                </a>
+              </h3>
+              <p>
+                Best practices for securing applications and infrastructure, including database hardening, SSH
+                protection, firewall setup, and authentication management.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Don’t just take my word for it: discover what others think about my work and collaborations.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="testimonial-masonry">
+
+          <div class="testimonial-item" data-aos="fade-up">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>From backend architecture to frontend design, he handled it all with precision. Communication was
+                always clear and fast.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/c.jpg" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Carlo D.</h3>
+                  <span class="position">CTO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>I gave him a messy idea and he came back with a polished product. It felt like magic (but with code).
+              </p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/m.jpg" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Marta S.</h3>
+                  <span class="position">Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>He delivered faster than our coffee machine could brew. That says it all.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/e.jpg" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Elena V.</h3>
+                  <span class="position">Entrepreneur</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>We needed a custom web app on a tight deadline, and he delivered right on time without compromising
+                quality.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/d.jpg" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Davide L.</h3>
+                  <span class="position">IT Specialist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Every project milestone was delivered on time, and the final product was better than we imagined.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/s.jpg" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Silvia P.</h3>
+                  <span class="position">Project Lead</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>He took our outdated website and transformed it into a modern platform that truly represents our brand.
+              </p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/p.jpg" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Paolo G.</h3>
+                  <span class="position">CEO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Got an idea? I’ve got the code. Let’s make magic happen.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <p>The fastest way to reach me, unless you know teleportation. <br> <span
+                  style="font-style: italic;">Carrier pigeons not accepted, but the rest</span>
+                works fine.
+              </p>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>My Location</h4>
+                  <p>Bergamo, Italy</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <a href="mailto:mattipiffari05@gmail.com" style="text-decoration: none;">mattipiffari05@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>Don’t be shy, I’ve seen worse bug reports.
+              </p>
+
+              <form action="https://api.web3forms.com/submit" method="post" class="php-email-form">
+                <div class="row gy-4">
+                  <input type="hidden" name="access_key" value="838b269e-17da-4df0-8630-c5f03c80a65c">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Matteo Piffari</strong> <span>All Rights
+            Reserved</span>
+        </p>
+        <a href="https://www.iubenda.com/privacy-policy/52127441/cookie-policy"
+          class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie
+          Policy</a>
+        <script
+          type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+        <a href="https://www.iubenda.com/privacy-policy/52127441"
+          class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy
+          Policy</a>
+        <script
+          type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
