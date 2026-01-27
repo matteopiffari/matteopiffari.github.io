@@ -11,6 +11,18 @@
 
   <meta property="og:title" content="DevOps Services, CI/CD & Automation | Matteo Piffari">
   <meta property="og:image" content="https://matteopiffari.it/assets/img/services/devops.jpg">
+  <meta property="og:description"
+    content="DevOps consulting and CI/CD automation. Streamlining deployment with Docker, Kubernetes, and efficient pipelines for faster releases.">
+  <meta property="og:url" content="https://matteopiffari.it/en/devops">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Matteo Piffari">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DevOps Services, CI/CD & Automation | Matteo Piffari">
+  <meta name="twitter:description"
+    content="DevOps consulting and CI/CD automation. Streamlining deployment with Docker, Kubernetes, and efficient pipelines for faster releases.">
+  <meta name="twitter:image" content="https://matteopiffari.it/assets/img/services/devops.jpg">
+  <meta name="twitter:site" content="@matteopiffari">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.ico" rel="icon">
@@ -43,21 +55,56 @@
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="./" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="./#about"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="./#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="./#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="./#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          <li><a href="./#contact"><i class="bi bi-envelope navicon"></i> Contact me</a></li>
+          <li><a href="./" class="active" title="Home"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="./#about" title="About"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="./#resume" title="Resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="./#portfolio" title="Portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="./#services" title="Services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li><a href="./#contact" title="Contact me"><i class="bi bi-envelope navicon"></i> Contact me</a></li>
+          <li class="mt-4">
+            <div class="d-flex text-center" style="margin-left: -0.5vw;">
+
+              <a href="../devops" title="Italiano" class="d-flex align-items-center justify-content-center p-1"
+                style="transition: transform 0.2s; filter: grayscale(60%); opacity: 0.6;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 640 480"
+                  style="border-radius: 3px; box-shadow: 0 0 5px rgba(0,0,0,0.3);">
+                  <g fill-rule="evenodd" stroke-width="1pt">
+                    <path fill="#fff" d="M0 0h640v480H0z" />
+                    <path fill="#009246" d="M0 0h213.3v480H0z" />
+                    <path fill="#ce2b37" d="M426.7 0H640v480H426.7z" />
+                  </g>
+                </svg>
+              </a>
+
+              <span class="mx-2" style="color: var(--nav-color); opacity: 0.3;">|</span>
+
+              <a href="#" title="English" class="d-flex align-items-center justify-content-center p-1"
+                style="transition: transform 0.2s;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 640 480"
+                  style="border-radius: 3px;">
+                  <path fill="#012169" d="M0 0h640v480H0z" />
+                  <path fill="#FFF"
+                    d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z" />
+                  <path fill="#C8102E"
+                    d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176-37 41L0 47V0z" />
+                  <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z" />
+                  <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z" />
+                </svg>
+              </a>
+
+            </div>
+          </li>
         </ul>
       </nav>
 
       <div class="social-links text-center">
-        <a href="https://github.com/matteopiffari" class="github" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/matteopiffari" class="linkedin" target="_blank"><i
+        <a href="https://github.com/matteopiffari" class="github" target="_blank" title="GitHub"><i
+            class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/matteopiffari" class="linkedin" target="_blank" title="LinkedIn"><i
             class="bi bi-linkedin"></i></a>
-        <a href="https://x.com/matteopiffari" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.instagram.com/matteopiffari" class="instagram" target="_blank"><i
+        <a href="https://x.com/matteopiffari" class="twitter" target="_blank" title="X (Twitter)"><i
+            class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/matteopiffari" class="instagram" target="_blank" title="Instagram"><i
             class="bi bi-instagram"></i></a>
       </div>
 
@@ -73,7 +120,7 @@
         <h1 class="mb-2 mb-lg-0">DevOps Services</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="./">Home</a></li>
+            <li><a href="./" title="Home">Home</a></li>
             <li class="current">DevOps Services</li>
           </ol>
         </nav>
@@ -100,15 +147,21 @@
             <div class="content mt-5">
               <h3>DevOps & CI/CD</h3>
               <p>
-                Efficient software delivery relies on smooth collaboration between development and operations. By
-                implementing modern DevOps practices and CI/CD pipelines, I help teams automate repetitive tasks,
-                accelerate release cycles, and maintain high-quality standards throughout the development process.
+                In today's fast-paced digital landscape, speed is not an option: it's a competitive advantage. Efficient
+                software delivery relies on breaking down the silos between development and operations. By implementing
+                modern DevOps methodologies and robust CI/CD (Continuous Integration / Continuous Deployment) pipelines,
+                I help your teams automate repetitive, error-prone manual tasks. I transform the release process from a
+                stressful, risky event into a smooth and predictable daily routine, enabling you to maintain the highest
+                quality standards throughout the entire software lifecycle, from the first commit straight to
+                production.
               </p>
               <p>
-                From containerization with Docker to orchestration with Kubernetes, I design infrastructures that are
-                scalable, resilient, and easy to maintain. The result is a development workflow that reduces manual
-                overhead, minimizes downtime, and allows new features and fixes to reach production faster and more
-                reliably.
+                My technical expertise covers the entire modern infrastructure stack. From application containerization
+                with Docker to ensure consistency across environments, to complex large-scale orchestration via
+                Kubernetes. I design Infrastructure as Code (IaC) solutions that are inherently scalable, resilient
+                (self-healing), and easy to maintain and evolve. The end result is an optimized workflow that
+                drastically reduces operational overhead, minimizes downtime, and accelerates Time-to-Market, allowing
+                new features and critical fixes to reach end-users faster and with unprecedented reliability.
               </p>
 
               <div class="features mt-4">
@@ -155,9 +208,11 @@
             Reserved</span>
         </p>
         <p>Foto di <a
-            href="https://unsplash.com/it/@growtika?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Growtika</a>
+            href="https://unsplash.com/it/@growtika?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            title="Growtika">Growtika</a>
           su <a
-            href="https://unsplash.com/it/foto/diagramma-f7uCQxhucw4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            href="https://unsplash.com/it/foto/diagramma-f7uCQxhucw4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            title="Unsplash">Unsplash</a>
         </p>
       </div>
     </div>
@@ -165,7 +220,7 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Back to top"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
